@@ -67,6 +67,14 @@ case_all
   
 ```
 
+```{r}
+case_all|>
+  ggplot(aes(x=city_state,y=OR))+
+  geom_point()+
+  geom_errorbar(aes(ymin=OR_lower,ymax=OR_upper))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+  
+```
 
 
 ## Including Plots
